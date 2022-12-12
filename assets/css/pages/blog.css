@@ -1,0 +1,162 @@
+.main {
+  background: #c65858 url(/assets/img/backgroundtex.png);
+}
+
+.main-recommendations {
+  padding: calc(40 * var(--dp)) calc(40 * var(--dp));
+}
+
+/* Previews*/
+
+.main-recommendations-previews {
+  max-width: 66%;
+}
+
+.main-recommendations-previews-item {
+  max-width: 48%;
+  background-color: #cebfb07c;
+  border-radius: calc(25 * var(--dp));
+}
+
+.main-recommendations-previews-item-img {
+  width: 100%;
+  height: calc(450 * var(--dp));
+  border-radius: calc(20 * var(--dp));
+}
+
+.main-recommendations-previews-item-infowrapper {
+  padding: calc(20 * var(--dp));
+}
+
+.main-recommendations-previews-item-name {
+  font-size: calc(45 * var(--dp));
+  margin-bottom: calc(5 * var(--dp));
+  color: var(--shadow);
+  -webkit-text-stroke-color: var(--darkerRed);
+  text-shadow: 0px 2px 5px var(--beige);
+}
+
+.main-recommendations-previews-item-description {
+  color: #cfcfcf;
+  -webkit-text-stroke: calc(2 * var(--dp)) var(--shadow) /*#525252*/;
+  text-shadow: 0px 2px 5px var(--beige);
+  font-size: calc(35 * var(--dp));
+  margin-bottom: calc(10 * var(--dp));
+}
+
+/* Articles */
+
+.main-recommendations-articles {
+  max-width: 30%;
+  background-color: #cebfb07c;
+  padding: calc(20 * var(--dp));
+  border-radius: calc(25 * var(--dp));
+}
+
+.main-recommendations-articles-item:not(:last-child) {
+  margin-bottom: calc(20 * var(--dp));
+}
+
+.main-recommendations-articles-item-name {
+  color: var(--shadow);
+  -webkit-text-stroke-color: var(--darkerRed);
+  font-size: calc(35 * var(--dp));
+  text-shadow: 0px 2px 5px var(--beige);
+  margin-bottom: calc(10 * var(--dp));
+}
+
+.main-recommendations-articles-item-description {
+  -webkit-text-stroke: calc(2 * var(--dp)) var(--shadow) /*#525252*/;
+  text-shadow: 0px 2px 5px var(--beige);
+  font-size: calc(32 * var(--dp));
+  margin-bottom: calc(10 * var(--dp));
+}
+
+.main-recommendations-articles-item-link {
+  font-size: calc(33 * var(--dp));
+  color: var(--red);
+  -webkit-text-stroke-color: var(--shadow);
+  text-shadow: 0px 2px 5px var(--beige);
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+  .main-recommendations {
+    display: block;
+    padding: calc(40 * var(--dp)) calc(70 * var(--dp));
+  }
+  .main-recommendations-previews,
+  .main-recommendations-articles {
+    max-width: 100%;
+  }
+  .main-recommendations-previews {
+    margin-bottom: calc(50 * var(--dp));
+  }
+  .main-recommendations-previews-item {
+    border-radius: calc(40 * var(--dp));
+  }
+  .main-recommendations-previews-item-img {
+    height: calc(600 * var(--dp));
+    border-radius: calc(40 * var(--dp));
+  }
+  .main-recommendations-previews-item-name {
+    font-size: calc(70 * var(--dp));
+  }
+  .main-recommendations-previews-item-description {
+    font-size: calc(60 * var(--dp));
+    -webkit-text-stroke-width: calc(3 * var(--dp));
+  }
+  .main-recommendations-previews-item-read {
+    font-size: calc(60 * var(--dp));
+    padding: calc(40 * var(--dp));
+    border-radius: calc(60 * var(--dp));
+  }
+  .main-recommendations-previews-item-infowrapper {
+    padding: calc(40 * var(--dp));
+  }
+  .main-recommendations-articles {
+    padding: calc(40 * var(--dp));
+  }
+  .main-recommendations-articles-item:not(:last-child) {
+    margin-bottom: calc(50 * var(--dp));
+  }
+  .main-recommendations-articles-item-name {
+    font-size: calc(70 * var(--dp));
+  }
+  .main-recommendations-articles-item-description {
+    font-size: calc(60 * var(--dp));
+  }
+  .main-recommendations-articles-item-link {
+    font-size: calc(60 * var(--dp));
+  }
+}
+
+@media (max-width: 400px) {
+  .main-recommendations-previews-item-img {
+    height: calc(700 * var(--dp));
+  }
+  .main-recommendations-previews-item-name {
+    font-size: calc(100 * var(--dp));
+  }
+  .main-recommendations-previews-item-description {
+    font-size: calc(90 * var(--dp));
+    -webkit-text-stroke-width: calc(4 * var(--dp));
+  }
+  .main-recommendations-previews-item-read {
+    font-size: calc(80 * var(--dp));
+    border-radius: calc(70 * var(--dp));
+  }
+  .main-recommendations-previews-item-infowrapper {
+    padding: calc(50 * var(--dp));
+  }
+  .main-recommendations-articles-item-name {
+    font-size: calc(90 * var(--dp));
+  }
+  .main-recommendations-articles-item-description {
+    font-size: calc(80 * var(--dp));
+  }
+  .main-recommendations-articles-item-link {
+    font-size: calc(80 * var(--dp));
+  }
+}

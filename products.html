@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products - Ame bakery</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/products.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="line-after">
+      <div class="container-flex header-container">
+        <div class="header-identity">
+          <img src="assets/img/logo.svg" alt="" class="header-logo" />
+          <p class="header-name">Ame Bakery</p>
+        </div>
+        <nav>
+          <div class="links">
+            <div class="links-blockcontainer container">
+              <ul class="links-container container-flex">
+                <img
+                  src="assets/img/header/x.svg"
+                  alt=""
+                  class="links-x"
+                  onclick="headerMobileMenu()"
+                />
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/newsletter.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="index.html" class="links-item-link line-after"
+                    >Newsletter</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/about-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="aboutus.html" class="links-item-link line-after"
+                    >About Us</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/products-icon.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="products.html" class="links-item-link line-after"
+                    >Products</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/blog.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="blog.html" class="links-item-link line-after"
+                    >Blog</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/contact-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="contactus.html" class="links-item-link line-after"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="assets/img/header/burger.svg"
+            alt=""
+            onclick="headerMobileMenu()"
+            class="header-burger"
+          />
+        </nav>
+      </div>
+      <script src="assets/js/mobile-header.js"></script>
+    </header>
+    <section class="main">
+      <div class="wrapper line-after">
+        <section class="main-hero">
+          <div class="container">
+            <h1 class="main-hero-heading">
+              Free
+              <span class="main-hero-heading-accent main-hero-heading"
+                >shipping</span
+              >
+              for orders above
+              <span class="main-hero-heading-accent main-hero-heading"
+                >20$</span
+              >
+            </h1>
+            <div class="wrapper">
+              <p class="main-hero-description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Deleniti, nisi! Odio amet sed ad eaque incidunt nemo consectetur
+                ea excepturi.
+              </p>
+              <p class="main-hero-description-additional main-hero-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ipsa nulla voluptas dicta nostrum inventore labore optio
+                possimus officiis reiciendis.
+              </p>
+            </div>
+            <button
+              type="button"
+              class="main-hero-readmore"
+              onclick="specialOfferReadMore()"
+            >
+              Show more
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <section class="main-products">
+        <div class="top-menu">
+          <div class="main-products-search container-flex">
+            <input
+              type="text"
+              placeholder="Search pastries..."
+              class="main-products-search-input"
+              oninput="appliedSearchFilter()"
+            />
+            <img
+              src="assets/img/products/search.svg"
+              alt=""
+              class="main-products-search-icon"
+            />
+          </div>
+        </div>
+        <div class="main-products-wrapper container-flex">
+          <div class="main-products-filters container-flex">
+            <div class="main-products-filters-price">
+              <p class="main-products-filters-price-heading">Price</p>
+              <div class="main-products-filters-price-sliders">
+                <div
+                  class="main-products-filters-price-sliders-max main-products-filters-price-sliders-item"
+                >
+                  <input
+                    class="main-products-filters-price-sliders-max-range main-products-filters-price-sliders-item-range"
+                    type="range"
+                    value="500"
+                    min="50"
+                    max="500"
+                    step="25"
+                    oninput="sliderInput(0)"
+                  />
+                  <div class="container-flex">
+                    <p
+                      type="number"
+                      value="500"
+                      class="main-products-filters-price-sliders-max-result main-products-filters-price-sliders-item-result"
+                    ></p>
+                    <p class="main-products-filters-price-sliders-sign">max</p>
+                  </div>
+                </div>
+
+                <div
+                  class="main-products-filters-price-sliders-min main-products-filters-price-sliders-item"
+                >
+                  <input
+                    class="main-products-filters-price-sliders-min-range main-products-filters-price-sliders-item-range"
+                    type="range"
+                    value="0"
+                    min="0"
+                    max="450"
+                    step="25"
+                    oninput="sliderInput(1)"
+                  />
+                  <div class="container-flex">
+                    <p
+                      type="number"
+                      value="500"
+                      class="main-products-filters-price-sliders-min-result main-products-filters-price-sliders-item-result"
+                    ></p>
+                    <p class="main-products-filters-price-sliders-sign">min</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-flex">
+                <button
+                  onclick="appliedPriceFilter()"
+                  class="main-products-filters-price-sliders-apply"
+                >
+                  Apply
+                </button>
+                <button
+                  onclick="resetFilter('price')"
+                  class="main-products-filters-price-sliders-apply"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+            <div class="main-products-filters-category">
+              <p class="main-products-filters-category-heading">Category</p>
+              <ul class="main-products-filters-category-list">
+                <li
+                  class="main-products-filters-category-list-item main-products-filters-category-list-item-all category-active"
+                  onclick="resetFilter('category')"
+                >
+                  All categories
+                </li>
+                <li
+                  class="main-products-filters-category-list-item"
+                  data-categoryid="0"
+                  onclick="appliedCategoryFilter(this.getAttribute('data-categoryid'))"
+                >
+                  loading...
+                </li>
+                <li
+                  class="main-products-filters-category-list-item"
+                  data-categoryid="1"
+                  onclick="appliedCategoryFilter(this.getAttribute('data-categoryid'))"
+                >
+                  loading...
+                </li>
+                <li
+                  class="main-products-filters-category-list-item"
+                  data-categoryid="2"
+                  onclick="appliedCategoryFilter(this.getAttribute('data-categoryid'))"
+                >
+                  loading...
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="main-products-list container-flex">
+            <li
+              class="main-products-list-item container-flex"
+              data-productid="0"
+              style="flex-direction: column"
+            >
+              <div class="wrapper">
+                <img
+                  src="assets/img/whiteTex.png"
+                  alt=""
+                  class="main-products-list-item-img"
+                />
+                <div class="main-products-list-item-info">
+                  <div
+                    class="main-products-list-item-info-maininfo container-flex"
+                  >
+                    <h2 class="main-products-list-item-info-maininfo-name">
+                      Loading...
+                    </h2>
+                    <p class="main-products-list-item-info-maininfo-category">
+                      loading...
+                    </p>
+                  </div>
+                  <p class="main-products-list-item-info-description">
+                    Loading...
+                  </p>
+                  <div
+                    class="main-products-list-item-info-bottominfo container-flex"
+                  >
+                    <p class="main-products-list-item-info-bottominfo-price">
+                      loading...
+                    </p>
+                    <p class="main-products-list-item-info-bottominfo-weight">
+                      loading...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="productAdded(this.parentElement.getAttribute('data-productid'))"
+                class="main-products-list-item-info-addtocart"
+                type="submit"
+              >
+                Add to cart
+              </button>
+            </li>
+            <li
+              class="main-products-list-item container-flex"
+              data-productid="1"
+              style="flex-direction: column"
+            >
+              <div class="wrapper">
+                <img
+                  src="assets/img/whiteTex.png"
+                  alt=""
+                  class="main-products-list-item-img"
+                />
+                <div class="main-products-list-item-info">
+                  <div
+                    class="main-products-list-item-info-maininfo container-flex"
+                  >
+                    <h2 class="main-products-list-item-info-maininfo-name">
+                      Loading...
+                    </h2>
+                    <p class="main-products-list-item-info-maininfo-category">
+                      loading...
+                    </p>
+                  </div>
+                  <p class="main-products-list-item-info-description">
+                    Loading...
+                  </p>
+                  <div
+                    class="main-products-list-item-info-bottominfo container-flex"
+                  >
+                    <p class="main-products-list-item-info-bottominfo-price">
+                      loading...
+                    </p>
+                    <p class="main-products-list-item-info-bottominfo-weight">
+                      loading...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="productAdded(this.parentElement.getAttribute('data-productid'))"
+                class="main-products-list-item-info-addtocart"
+                type="submit"
+              >
+                Add to cart
+              </button>
+            </li>
+            <li
+              class="main-products-list-item container-flex"
+              data-productid="2"
+              style="flex-direction: column"
+            >
+              <div class="wrapper">
+                <img
+                  src="assets/img/whiteTex.png"
+                  alt=""
+                  class="main-products-list-item-img"
+                />
+                <div class="main-products-list-item-info">
+                  <div
+                    class="main-products-list-item-info-maininfo container-flex"
+                  >
+                    <h2 class="main-products-list-item-info-maininfo-name">
+                      Loading...
+                    </h2>
+                    <p class="main-products-list-item-info-maininfo-category">
+                      loading...
+                    </p>
+                  </div>
+                  <p class="main-products-list-item-info-description">
+                    Loading...
+                  </p>
+                  <div
+                    class="main-products-list-item-info-bottominfo container-flex"
+                  >
+                    <p class="main-products-list-item-info-bottominfo-price">
+                      loading...
+                    </p>
+                    <p class="main-products-list-item-info-bottominfo-weight">
+                      loading...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="productAdded(this.parentElement.getAttribute('data-productid'))"
+                class="main-products-list-item-info-addtocart"
+                type="submit"
+              >
+                Add to cart
+              </button>
+            </li>
+            <li
+              class="main-products-list-item container-flex"
+              data-productid="3"
+              style="flex-direction: column"
+            >
+              <div class="wrapper">
+                <img
+                  src="assets/img/whiteTex.png"
+                  alt=""
+                  class="main-products-list-item-img"
+                />
+                <div class="main-products-list-item-info">
+                  <div
+                    class="main-products-list-item-info-maininfo container-flex"
+                  >
+                    <h2 class="main-products-list-item-info-maininfo-name">
+                      Loading...
+                    </h2>
+                    <p class="main-products-list-item-info-maininfo-category">
+                      loading...
+                    </p>
+                  </div>
+                  <p class="main-products-list-item-info-description">
+                    Loading...
+                  </p>
+                  <div
+                    class="main-products-list-item-info-bottominfo container-flex"
+                  >
+                    <p class="main-products-list-item-info-bottominfo-price">
+                      loading...
+                    </p>
+                    <p class="main-products-list-item-info-bottominfo-weight">
+                      loading...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="productAdded(this.parentElement.getAttribute('data-productid'))"
+                class="main-products-list-item-info-addtocart"
+                type="submit"
+              >
+                Add to cart
+              </button>
+            </li>
+            <li
+              class="main-products-list-item container-flex"
+              data-productid="4"
+              style="flex-direction: column"
+            >
+              <div class="wrapper">
+                <img
+                  src="assets/img/whiteTex.png"
+                  alt=""
+                  class="main-products-list-item-img"
+                />
+                <div class="main-products-list-item-info">
+                  <div
+                    class="main-products-list-item-info-maininfo container-flex"
+                  >
+                    <h2 class="main-products-list-item-info-maininfo-name">
+                      Loading...
+                    </h2>
+                    <p class="main-products-list-item-info-maininfo-category">
+                      loading...
+                    </p>
+                  </div>
+                  <p class="main-products-list-item-info-description">
+                    Loading...
+                  </p>
+                  <div
+                    class="main-products-list-item-info-bottominfo container-flex"
+                  >
+                    <p class="main-products-list-item-info-bottominfo-price">
+                      loading...
+                    </p>
+                    <p class="main-products-list-item-info-bottominfo-weight">
+                      loading...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                onclick="productAdded(this.parentElement.getAttribute('data-productid'))"
+                class="main-products-list-item-info-addtocart"
+                type="submit"
+              >
+                Add to cart
+              </button>
+            </li>
+          </ul>
+          <p class="main-products-noitems">No items found.</p>
+        </div>
+      </section>
+    </section>
+
+    <script src="assets/js/specialoffer-readmore.js"></script>
+    <script src="assets/js/products-info.js"></script>
+    <script src="assets/js/products-filters.js"></script>
+  </body>
+</html>

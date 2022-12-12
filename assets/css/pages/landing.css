@@ -1,0 +1,152 @@
+.main {
+  background: #c65858 url(/assets/img/backgroundtex.png);
+  padding: calc(50 * var(--dp)) 0;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* Call Action */
+
+.main-callaction {
+  max-width: calc(750 * var(--dp));
+  animation: normal slideFromLeft 1s ease;
+}
+
+.main-callaction-heading-item {
+  font-size: calc(80 * var(--dp));
+  -webkit-text-stroke: black calc(3 * var(--dp));
+  text-shadow: 0px 2px 5px var(--shadow);
+}
+
+.main-callaction-heading-item-accent {
+  color: var(--red);
+  -webkit-text-stroke: white calc(2.5 * var(--dp));
+}
+
+.main-callaction-description {
+  -webkit-text-stroke: var(--red) calc(2 * var(--dp));
+  font-size: calc(35 * var(--dp));
+  background-color: var(--beige);
+  padding: calc(20 * var(--dp));
+  border-radius: calc(40 * var(--dp));
+  text-shadow: 0px 2px 5px var(--shadow);
+  margin-bottom: calc(30 * var(--dp));
+  max-width: calc(600 * var(--dp));
+}
+
+.main-image {
+  width: calc(650 * var(--dp));
+  animation: normal slideFromRight 1s ease;
+}
+
+.main-callaction-form-success {
+  border-radius: calc(20 * var(--dp));
+  padding: calc(20 * var(--dp));
+  font-size: calc(38 * var(--dp));
+  margin-bottom: calc(20 * var(--dp));
+  background-color: #5ec838a7;
+  opacity: 0;
+  display: none;
+  animation: normal slideFromRight 1s ease;
+}
+
+.main-callaction-form-name,
+.main-callaction-form-email {
+  border-radius: calc(30 * var(--dp));
+  width: 60%;
+  padding: calc(15 * var(--dp));
+  height: calc(40 * var(--dp));
+  border: calc(2 * var(--dp)) black solid;
+}
+
+.main-callaction-form-name {
+  margin-bottom: calc(30 * var(--dp));
+}
+
+.main-callaction-form-name::placeholder,
+.main-callaction-form-email::placeholder {
+  -webkit-text-stroke: 0 transparent;
+  color: var(--shadow);
+  font-size: calc(35 * var(--dp));
+}
+
+.main-callaction-form-submit {
+  background-color: var(--red);
+  margin-top: calc(35 * var(--dp));
+  padding: calc(25 * var(--dp));
+  border-radius: calc(40 * var(--dp));
+  width: calc(230 * var(--dp));
+  border: calc(4 * var(--dp)) var(--beige) solid;
+}
+
+.main-callaction-form-submit-item {
+  font-size: calc(35 * var(--dp));
+}
+
+.main-callaction-form-submit-icon {
+  width: calc(40 * var(--dp));
+}
+
+/* Media */
+
+@media (max-width: 800px) {
+  .main-callaction {
+    margin-bottom: calc(120 * var(--dp));
+  }
+  .main-callactioncontainer {
+    display: block;
+  }
+  .main-callactioncontainer > * {
+    max-width: 100%;
+  }
+  .main-callaction-heading-item {
+    font-size: calc(180 * var(--dp));
+    text-align: center;
+  }
+  .main-callaction-description {
+    font-size: calc(90 * var(--dp));
+    max-width: 100%;
+    padding: calc(25 * var(--dp));
+    text-align: center;
+    border-radius: calc(80 * var(--dp));
+  }
+  .main-callaction-form-success {
+    margin: auto;
+    font-size: calc(100 * var(--dp));
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: calc(60 * var(--dp));
+    border-radius: calc(80 * var(--dp));
+  }
+  .main-callaction-form {
+    width: 90%;
+  }
+  .main-callaction-form-name,
+  .main-callaction-form-email {
+    width: 100%;
+    height: calc(100 * var(--dp));
+    border-radius: calc(80 * var(--dp));
+    padding: calc(40 * var(--dp));
+  }
+  .main-callaction-form-name {
+    margin-bottom: calc(40 * var(--dp));
+  }
+  .main-callaction-form-submit {
+    width: 45%;
+    margin: auto;
+    height: calc(150 * var(--dp));
+    padding: calc(100 * var(--dp)) calc(80 * var(--dp));
+    margin-top: calc(60 * var(--dp));
+    border-radius: calc(60 * var(--dp));
+  }
+  .main-callaction-form-submit-item {
+    font-size: calc(100 * var(--dp));
+  }
+  .main-callaction-form-submit-icon {
+    width: calc(100 * var(--dp));
+  }
+  .main-image {
+    width: 80%;
+    margin: auto;
+  }
+}

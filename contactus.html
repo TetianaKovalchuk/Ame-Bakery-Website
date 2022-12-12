@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ame Bakery - Blog</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/contactus.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="line-after">
+      <div class="container-flex header-container">
+        <div class="header-identity">
+          <img src="assets/img/logo.svg" alt="" class="header-logo" />
+          <p class="header-name">Ame Bakery</p>
+        </div>
+        <nav>
+          <div class="links">
+            <div class="links-blockcontainer container">
+              <ul class="links-container container-flex">
+                <img
+                  src="assets/img/header/x.svg"
+                  alt=""
+                  class="links-x"
+                  onclick="headerMobileMenu()"
+                />
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/newsletter.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="index.html" class="links-item-link line-after"
+                    >Newsletter</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/about-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="aboutus.html" class="links-item-link line-after"
+                    >About Us</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/products-icon.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="products.html" class="links-item-link line-after"
+                    >Products</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/blog.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="blog.html" class="links-item-link line-after"
+                    >Blog</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/contact-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="contactus.html" class="links-item-link line-after"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="assets/img/header/burger.svg"
+            alt=""
+            onclick="headerMobileMenu()"
+            class="header-burger"
+          />
+        </nav>
+      </div>
+      <script src="assets/js/mobile-header.js"></script>
+    </header>
+    <section class="main">
+      <h1 class="main-heading">Contact us</h1>
+      <div
+        class="main-container container-flex"
+        style="justify-content: space-evenly"
+      >
+        <div class="main-contacts">
+          <ul class="main-contacts-list">
+            <li class="main-contacts-list-item container-flex">
+              <img
+                src="assets/img/contactus/phone.svg"
+                alt=""
+                class="main-contacts-list-item-icon"
+              />
+              <a href="tel:" class="main-contacts-list-item-link"
+                >+100000000000</a
+              >
+            </li>
+            <li class="main-contacts-list-item container-flex">
+              <img
+                src="assets/img/contactus/mail.svg"
+                alt=""
+                class="main-contacts-list-item-icon"
+              />
+              <a href="mailto:" class="main-contacts-list-item-link"
+                >amebakery@gmail.com</a
+              >
+            </li>
+            <li class="main-contacts-list-item container-flex">
+              <img
+                src="assets/img/contactus/time.svg"
+                alt=""
+                class="main-contacts-list-item-icon"
+              />
+              <a class="main-contacts-list-item-link">Mon - Fri 8:00-20:00</a>
+            </li>
+            <li class="main-contacts-list-item container-flex">
+              <img
+                src="assets/img/contactus/geolocation.svg"
+                alt=""
+                class="main-contacts-list-item-icon"
+              />
+              <a
+                href="https://g.page/cukierniawz-gdansk?share"
+                class="main-contacts-list-item-link"
+                >Kyiv, m. Nivky, Oleksandrivska, 23</a
+              >
+            </li>
+          </ul>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2325.536160251065!2d18.651516800000003!3d54.347505999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd739f603eea25%3A0xe0b3d7f66058f6d3!2sCukiernia%20W-Z!5e0!3m2!1sru!2spl!4v1659982213550!5m2!1sru!2spl"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+  </body>
+</html>

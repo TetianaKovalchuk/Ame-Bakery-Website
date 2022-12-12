@@ -1,0 +1,170 @@
+:root {
+  --red: #c71c1c;
+  --darkerRed: #901616;
+  --beige: #ffecd8;
+  --shadow: #9a4d00;
+  --dp: 100vw / 1920;
+}
+
+* {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: calc(30 * var(--dp));
+  color: white;
+  -webkit-text-stroke: calc(2 * var(--dp)) black;
+  align-items: center;
+  transition: 500ms ease;
+  -webkit-appearance: none;
+}
+
+*::after {
+  transition: 500ms ease;
+}
+
+*:hover {
+  transition: 500ms ease;
+}
+
+*:hover::after {
+  transition: 500ms ease;
+}
+
+.container {
+  max-width: calc(1500 * var(--dp));
+  display: block;
+  margin: auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.line-after::after {
+  content: "";
+  width: 100%;
+  height: calc(3 * var(--dp));
+  display: block;
+  position: absolute;
+  background-color: var(--shadow);
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(calc(-70 * var(--dp)));
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(calc(70 * var(--dp)));
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  0% {
+    transform: translateY(calc(70 * var(--dp)));
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--red);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  background-color: var(--red);
+  border-radius: calc(35 * var(--dp));
+  padding: calc(20 * var(--dp));
+  font-size: calc(35 * var(--dp));
+  border: white calc(2 * var(--dp)) solid;
+  cursor: pointer;
+  text-shadow: 0px 2px 5px var(--shadow);
+  box-shadow: 0px 2px 5px var(--shadow);
+}
+
+button:hover {
+  background-color: var(--darkerRed);
+}
+
+img {
+  width: calc(40 * var(--dp));
+  height: auto;
+}
+
+input {
+  border: none;
+}
+
+input::placeholder {
+  color: gray;
+  -webkit-text-stroke: 0;
+  font-size: calc(32 * var(--dp));
+}
+
+@media (max-width: 800px) {
+  * {
+    font-size: calc(90 * var(--dp));
+    -webkit-text-stroke-width: calc(5 * var(--dp));
+  }
+  .container {
+    max-width: calc(1700 * var(--dp));
+  }
+  input::placeholder {
+    font-size: calc(90 * var(--dp)) !important;
+    padding: calc(30 * var(--dp));
+  }
+  .line-after::after {
+    height: calc(5 * var(--dp));
+  }
+}

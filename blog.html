@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ame Bakery - Blog</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/blog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="line-after">
+      <div class="container-flex header-container">
+        <div class="header-identity">
+          <img src="assets/img/logo.svg" alt="" class="header-logo" />
+          <p class="header-name">Ame Bakery</p>
+        </div>
+        <nav>
+          <div class="links">
+            <div class="links-blockcontainer container">
+              <ul class="links-container container-flex">
+                <img
+                  src="assets/img/header/x.svg"
+                  alt=""
+                  class="links-x"
+                  onclick="headerMobileMenu()"
+                />
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/newsletter.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="index.html" class="links-item-link line-after"
+                    >Newsletter</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/about-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="aboutus.html" class="links-item-link line-after"
+                    >About Us</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/products-icon.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="products.html" class="links-item-link line-after"
+                    >Products</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/blog.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="blog.html" class="links-item-link line-after"
+                    >Blog</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/contact-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="contactus.html" class="links-item-link line-after">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="assets/img/header/burger.svg"
+            alt=""
+            onclick="headerMobileMenu()"
+            class="header-burger"
+          />
+        </nav>
+      </div>
+      <script src="assets/js/mobile-header.js"></script>
+    </header>
+    <section class="main">
+      <section class="main-recommendations container-flex">
+        <ul class="main-recommendations-previews container-flex">
+          <li class="main-recommendations-previews-item">
+            <img
+              src="https://fakeimg.pl/300/"
+              alt=""
+              class="main-recommendations-previews-item-img"
+            />
+            <div class="main-recommendations-previews-item-infowrapper">
+              <p class="main-recommendations-previews-item-name">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <p class="main-recommendations-previews-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                ab!
+              </p>
+              <button
+                type="button"
+                class="main-recommendations-previews-item-read"
+              >
+                Read
+              </button>
+            </div>
+          </li>
+          <li class="main-recommendations-previews-item">
+            <img
+              src="https://fakeimg.pl/300/"
+              alt=""
+              class="main-recommendations-previews-item-img"
+            />
+            <div class="main-recommendations-previews-item-infowrapper">
+              <p class="main-recommendations-previews-item-name">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              </p>
+              <p class="main-recommendations-previews-item-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                ab!
+              </p>
+              <button
+                type="button"
+                class="main-recommendations-previews-item-read"
+              >
+                Read
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="main-recommendations-articles">
+          <li class="main-recommendations-articles-item">
+            <p class="main-recommendations-articles-item-name">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p class="main-recommendations-articles-item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur, recusandae.
+            </p>
+            <a href="#" class="main-recommendations-articles-item-link"
+              >Read it in X mins</a
+            >
+          </li>
+          <li class="main-recommendations-articles-item">
+            <p class="main-recommendations-articles-item-name">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p class="main-recommendations-articles-item-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla
+              consequatur voluptatibus nemo accusamus perspiciatis tempora ipsa
+              id nam deserunt. Ipsum!
+            </p>
+            <a href="#" class="main-recommendations-articles-item-link"
+              >Read it in X mins</a
+            >
+          </li>
+          <li class="main-recommendations-articles-item">
+            <p class="main-recommendations-articles-item-name">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              iure vel numquam voluptas?
+            </p>
+            <p class="main-recommendations-articles-item-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+              cupiditate fuga libero nam.
+            </p>
+            <a href="#" class="main-recommendations-articles-item-link"
+              >Read it in X mins</a
+            >
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>
