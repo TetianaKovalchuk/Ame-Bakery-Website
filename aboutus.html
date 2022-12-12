@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us - Ame bakery</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/pages/aboutus.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="assets/img/logo2.png" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="line-after">
+      <div class="container-flex header-container">
+        <div class="header-identity">
+          <img src="assets/img/logo.svg" alt="" class="header-logo" />
+          <p class="header-name">Ame Bakery</p>
+        </div>
+        <nav>
+          <div class="links">
+            <div class="links-blockcontainer container">
+              <ul class="links-container container-flex">
+                <img
+                  src="assets/img/header/x.svg"
+                  alt=""
+                  class="links-x"
+                  onclick="headerMobileMenu()"
+                />
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/newsletter.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="index.html" class="links-item-link line-after"
+                    >Newsletter</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/about-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="aboutus.html" class="links-item-link line-after"
+                    >About Us</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/products-icon.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="products.html" class="links-item-link line-after"
+                    >Products</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/blog.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="blog.html" class="links-item-link line-after"
+                    >Blog</a
+                  >
+                </li>
+                <li class="links-item container-flex">
+                  <img
+                    src="assets/img/header/contact-us.svg"
+                    alt=""
+                    class="links-item-icon"
+                  />
+                  <a href="contactus.html" class="links-item-link line-after"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            src="assets/img/header/burger.svg"
+            alt=""
+            onclick="headerMobileMenu()"
+            class="header-burger"
+          />
+        </nav>
+      </div>
+      <script src="assets/js/mobile-header.js"></script>
+    </header>
+    <section class="main">
+      <section class="main-banner line-after">
+        <div class="main-banner-container container-flex">
+          <div class="main-banner-post">
+            <h1 class="main-banner-post-heading">Special offer!</h1>
+            <p class="main-banner-post-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+              accusantium?
+            </p>
+            <p
+              class="main-banner-post-description-more main-banner-post-description"
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta
+              commodi neque quasi nobis, eligendi quibusdam expedita obcaecati
+              aspernatur eveniet adipisci veniam nihil? Minima animi non ea
+              consectetur, pariatur a dolorem!
+            </p>
+            <button
+              type="button"
+              class="main-banner-post-readmore"
+              onclick="eventReadMore()"
+            >
+              Show more
+            </button>
+          </div>
+          <img
+            src="assets/img/aboutus/image1.png"
+            alt=""
+            class="main-banner-image"
+          />
+        </div>
+        <section class="main-recommendations-wrapper">
+          <ul class="main-recommendations container-flex">
+            <li class="main-recommendations-item container-flex">
+              <img
+                src="assets/img/aboutus/recommendationIcon1.png"
+                alt=""
+                class="main-recommendations-item-icon"
+              />
+              <div class="main-recommendations-item-info container-flex">
+                <h2 class="main-recommendations-item-info-heading">
+                  Cherry pie
+                </h2>
+                <p class="main-recommendations-item-info-description">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+            <li class="main-recommendations-item container-flex">
+              <img
+                src="assets/img/aboutus/recommendationIcon1.png"
+                alt=""
+                class="main-recommendations-item-icon"
+              />
+              <div class="main-recommendations-item-info container-flex">
+                <h2 class="main-recommendations-item-info-heading">
+                  Cherry pie
+                </h2>
+                <p class="main-recommendations-item-info-description">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+            <li class="main-recommendations-item container-flex">
+              <img
+                src="assets/img/aboutus/recommendationIcon1.png"
+                alt=""
+                class="main-recommendations-item-icon"
+              />
+              <div class="main-recommendations-item-info container-flex">
+                <h2 class="main-recommendations-item-info-heading">
+                  Cherry pie
+                </h2>
+                <p class="main-recommendations-item-info-description">
+                  Lorem ipsum dolor sit amet.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="main-aboutus">
+        <div class="carousel-container">
+          <div class="carousel">
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/1.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/2.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/3.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/4.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/5.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/6.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/7.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/8.png"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <img
+                class="carousel-img"
+                src="/assets/img/aboutus/carousel/9.png"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="main-aboutus-info container">
+          <h1 class="main-aboutus-info-heading line-after">Our pastries</h1>
+          <ul class="main-aboutus-info-list container">
+            <li class="main-aboutus-info-list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              maxime. Lorem ipsum dolor sit amet.
+            </li>
+            <li class="main-aboutus-info-list-item">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
+              iure! Lorem ipsum dolor sit amet.
+            </li>
+            <li class="main-aboutus-info-list-item">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, molestiae? Lorem ipsum dolor sit amet.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <script src="assets/js/event-readmore.js"></script>
+  </body>
+</html>
