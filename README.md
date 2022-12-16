@@ -1,6 +1,8 @@
 # Ame-Bakery-Website
-A website I did for practice/portfolio, randomly generated. Was made without a ready design.
+A 5-page website I did for practice/portfolio, randomly generated. Was made without a ready design.
+Especially  proud of the product filters I made on the products page, and the website design in general.
 
+GitHub Pages link: https://tetianakovalchuk.github.io/Ame-Bakery-Website/
 
 You can watch the video showing all the hovers and animations:
 
