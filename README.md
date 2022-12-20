@@ -1,45 +1,34 @@
 # Ame-Bakery-Website
-A 5-page website I did for practice/portfolio, randomly generated. Was made without a ready design.
-Especially  proud of the product filters I made on the products page, and the website design in general.
+A website of a bakery.
+I fully designed it myself. This website contained many things that were new to me. One of them is the "product filters" that filter stuff by price and categories. I used JS, ECMAScript, and jQuery for that. Also, that's one of my first experiences with multiple-page websites. The website's theme and name were randomly generated for practice, so this isn't a real bakery. The link attached is a GitHub Pages link, and it doesn't show the scripts and some of the assets, so please watch the presentation video attached.
 
 GitHub Pages link: https://tetianakovalchuk.github.io/Ame-Bakery-Website/
+
 
 You can watch the video showing all the hovers and animations:
 
 
-
-https://user-images.githubusercontent.com/118926997/207009495-69dfb5b6-c673-4724-b18f-1178a61aeaa9.mp4
-
+https://user-images.githubusercontent.com/118926997/208768421-1dc8c98b-567e-43a3-af33-309ea2176674.mp4
 
 
 (GitHub Pages doesn't show all the assets and scripts, so watch the video)
 
-Pictures below:
 
-Landing/Newsletter Page
+Website preview below:
 
-![amebakery1](https://user-images.githubusercontent.com/118926997/207009521-1a226eac-b443-4a3a-ae0d-ae89ce97e8b3.png)
+![Newsletter page](https://user-images.githubusercontent.com/118926997/208768528-96568e2b-b3bd-41ed-94e9-5b1a5c80fb85.png)
+Newsletter page
 
-About us page 1
+![About us page](https://user-images.githubusercontent.com/118926997/208768641-05467e15-b768-4bb6-a3a8-72e5cde5f93d.png)
+About us page
 
-![amebakery2](https://user-images.githubusercontent.com/118926997/207009548-8aed6ec6-b6a7-4eb3-afc2-13162242a900.png)
+![Products page](https://user-images.githubusercontent.com/118926997/208768701-7a6b823b-2635-4220-9579-02de55ddb200.png)
+Products page
 
-About us page 2
-
-![amebakery3](https://user-images.githubusercontent.com/118926997/207009577-c8060352-1516-45e2-bd6b-035d8de097f6.png)
-
-Products page 1
-
-![amebakery4](https://user-images.githubusercontent.com/118926997/207009598-e85f0668-4194-4afc-bec2-616a987b31dc.png)
-
-Products page 2
-
-![amebakery5](https://user-images.githubusercontent.com/118926997/207009663-bcc96e10-de5e-4e5b-8aa8-39d317fa189a.png)
-
+![Blog page](https://user-images.githubusercontent.com/118926997/208768673-f3a21dec-9a9f-48a8-93f6-8812ba7efc5a.png)
 Blog page
 
-![amebakery6](https://user-images.githubusercontent.com/118926997/207009667-08cd928b-366b-47dc-88b7-f9ce4535b553.png)
+![Contact us page](https://user-images.githubusercontent.com/118926997/208768693-4593b70b-17be-464e-b523-7175d1411cea.png)
+Contact us page
 
-Contacts page
 
-![amebakery7](https://user-images.githubusercontent.com/118926997/207009649-dc118b89-f962-4a6c-a1f4-98ef5a82d877.png)
